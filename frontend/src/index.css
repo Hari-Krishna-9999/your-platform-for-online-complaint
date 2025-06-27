@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 15px 30px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #FFD700;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  padding: 20px;
+}
+
+.login-card {
+  background: #1e1e1e;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #bbb;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+}
+
+.btn-login {
+  background: #FFD700;
+  color: #111;
+  padding: 12px;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #e6be00;
+}
+
+.form-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.form-footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background: #1e1e1e;
+  color: white;
+  width: 300px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.chat-header {
+  background: #111;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h2 {
+  font-size: 1rem;
+  color: #FFD700;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: #FFD700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+  background: #222;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message .sender {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.chat-message .text {
+  display: block;
+  margin-top: 2px;
+}
+
+.chat-message .time {
+  font-size: 0.7rem;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+.no-messages {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #333;
+  background: #1a1a1a;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  background: #2b2b2b;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.chat-input input:focus {
+  outline: none;
+  border: 1px solid #FFD700;
+}
+
+.chat-input button {
+  background: #FFD700;
+  border: none;
+  padding: 0 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+.admin-header {
+  background-color: black;
+  color: #FFD700;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-link {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.admin-link:hover {
+  background-color: #FFD700;
+  color: black;
+}
+
+.admin-link.active {
+  background-color: #FFD700;
+  color: black;
+}
+
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-content {
+  padding: 20px;
+  background-color: #111;
+  color: white;
+  min-height: 90vh;
+}
+
