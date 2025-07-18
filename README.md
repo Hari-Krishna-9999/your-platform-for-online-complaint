@@ -59,7 +59,8 @@ your-platform-for-online-complaint/
 - Assign agents to complaints
 - View user and agent info
 
-![Admin Dashboard](./ONLINE-COMPLAINTS/frontend/src/images/admin%20dashboard.jpg)
+![Admin Dashboard](./admin-dashboard.jpg)
+
 
 ---
 
