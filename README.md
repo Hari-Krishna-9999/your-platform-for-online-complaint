@@ -41,7 +41,7 @@ your-platform-for-online-complaint/
 - View complaint status
 - Chat with assigned agent
 
-![User Dashboard](./ONLINE-COMPLAINTS/frontend/src/images/user%20dashboard.jpg)
+[User Dashboard](./ONLINE-COMPLAINTS/frontend/src/images/user%20dashboard.jpg)
 
 ---
 
@@ -50,7 +50,7 @@ your-platform-for-online-complaint/
 - Update complaint status
 - Chat with users
 
-![Agent Dashboard](./ONLINE-COMPLAINTS/frontend/src/images/agent%20dashboard.jpg)
+[Agent Dashboard](./ONLINE-COMPLAINTS/frontend/src/images/agent%20dashboard.jpg)
 
 ---
 
