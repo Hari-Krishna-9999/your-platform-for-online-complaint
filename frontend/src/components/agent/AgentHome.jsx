@@ -3,6 +3,7 @@ import {
   Search, MessageSquare, CheckCircle, Clock, User,
   MapPin, FileText, RotateCcw
 } from 'lucide-react';
+const API = import.meta.env.VITE_API_URL;
 import FooterC from '../common/FooterC';
 import ChatWindow from '../common/ChatWindow';
 import './AgentHome.css';

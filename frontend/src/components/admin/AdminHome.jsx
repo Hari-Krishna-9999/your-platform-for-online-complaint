@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+const API = import.meta.env.VITE_API_URL;
 import axios from 'axios';
 import FooterC from '../common/FooterC';
 import './AdminHome.css';

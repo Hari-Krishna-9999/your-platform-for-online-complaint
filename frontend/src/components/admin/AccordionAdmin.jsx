@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+const API = import.meta.env.VITE_API_URL;
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Alert from 'react-bootstrap/Alert';

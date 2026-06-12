@@ -4,7 +4,7 @@ import FooterC from '../common/FooterC';
 import './UserDashboard.css';
 import Status from './Status';
 import { useNavigate } from 'react-router-dom';
-
+const API = import.meta.env.VITE_API_URL;
 const HomePage = () => {
   const user = JSON.parse(localStorage.getItem('user')) || { name: 'User' };
   const [showForm, setShowForm] = useState(false);

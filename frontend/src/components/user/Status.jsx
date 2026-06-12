@@ -3,7 +3,7 @@ import FooterC from '../common/FooterC';
 import ChatWindow from '../common/ChatWindow';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { MoveLeft } from 'lucide-react';
-
+const API = import.meta.env.VITE_API_URL;
 const Status = () => {
   const [complaints, setComplaints] = useState([]);
   const [openChats, setOpenChats] = useState({});
