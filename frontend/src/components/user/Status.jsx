@@ -35,7 +35,7 @@ const Status = () => {
   const handleHomeClick = () => navigate('/user');
   const handleLogout = () => {
     localStorage.removeItem('user');
-    window.location.href = '/Login';
+    navigate('/login');
   };
 
   const handleDelete = async (complaintId) => {

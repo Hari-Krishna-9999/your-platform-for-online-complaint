@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Search, MessageSquare, CheckCircle, Clock, User,
   MapPin, FileText, RotateCcw
@@ -8,7 +9,7 @@ import FooterC from '../common/FooterC';
 import ChatWindow from '../common/ChatWindow';
 import './AgentHome.css';
 import axios from 'axios';
-
+const navigate = useNavigate();
 const AgentHome = () => {
   const user = JSON.parse(localStorage.getItem('user'));
   const [userName] = useState(user?.name || 'Agent');

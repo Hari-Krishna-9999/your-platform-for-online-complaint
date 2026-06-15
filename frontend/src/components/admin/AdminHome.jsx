@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 const API = import.meta.env.VITE_API_URL;
 import axios from 'axios';
 import FooterC from '../common/FooterC';
@@ -31,7 +31,7 @@ const AdminHome = () => {
   const fetchAllData = async () => {
     try {
       const [complaintRes, agentRes, userRes] = await Promise.all([
-        axios.get(`${API}status`),
+        axios.get(`${API}/status`),
         axios.get(`${API}/agentUsers`),
         axios.get(`${API}/OrdinaryUsers`),
       ]);

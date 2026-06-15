@@ -22,7 +22,7 @@ const HomePage = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('user');
-    window.location.href = '/Login';
+    navigate('/login');
   };
 
   const handleChange = (e) => {
