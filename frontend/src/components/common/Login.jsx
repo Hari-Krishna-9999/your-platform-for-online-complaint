@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 const API = import.meta.env.VITE_API_URL;
 import FooterC from './FooterC';
 
@@ -66,9 +66,9 @@ function Login() {
         <div className="brand">COMPLAINTCARE</div>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/login" className="active">Login</a></li>
-            <li><a href="/signup">Signup</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/login" className="active">Login</Link></li>
+            <li><Link to="/signup">Signup</Link></li>
           </ul>
         </nav>
       </header>
@@ -108,7 +108,7 @@ function Login() {
             </button>
 
             <div className="form-footer">
-              <p>Don't have an account? <a href="/signup">Sign up</a></p>
+              <p>Don't have an account?<Link to="/signup">Signup</Link> </p>
               <a href="#" className="forgot">Forgot Password?</a>
             </div>
           </form>

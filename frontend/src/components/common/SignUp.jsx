@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link} from 'react-router-dom';
 const API = import.meta.env.VITE_API_URL;
 function SignUp() {
   const navigate = useNavigate();
@@ -52,9 +52,9 @@ function SignUp() {
         <div className="brand">COMPLAINTCARE</div>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup" className="active">Signup</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/signup" className="active">Signup</Link></li>
           </ul>
         </nav>
       </header>
@@ -124,7 +124,7 @@ function SignUp() {
             </div>
             <button className="btn-login" type="submit">Sign Up</button>
             <div className="form-footer">
-              <p>Already have an account? <a href="/login">Login</a></p>
+              <p>Already have an account? <Link to="/login">Login</Link></p>
             </div>
           </form>
         </div>

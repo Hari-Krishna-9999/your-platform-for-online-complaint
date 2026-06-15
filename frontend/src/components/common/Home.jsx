@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import FooterC from '../common/FooterC';
 import heroImage from '../../images/Image1.png'; 
 
@@ -16,9 +16,9 @@ const Home = () => {
         <div className="brand">COMPLAINTCARE</div>
         <nav>
           <ul>
-            <li><a href="/" className="active">Home</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">Signup</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/signup">Signup</Link></li>
           </ul>
         </nav>
       </header>
