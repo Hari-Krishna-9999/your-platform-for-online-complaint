@@ -9,8 +9,9 @@ import FooterC from '../common/FooterC';
 import ChatWindow from '../common/ChatWindow';
 import './AgentHome.css';
 import axios from 'axios';
-const navigate = useNavigate();
+
 const AgentHome = () => {
+  const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
   const [userName] = useState(user?.name || 'Agent');
   const [agentId] = useState(user?._id);
@@ -21,7 +22,7 @@ const AgentHome = () => {
 
   useEffect(() => {
     if (!user || user.userType !== 'Agent') {
-      window.location.href = '/';
+      navigate('/');
     } else {
       fetchAssignedComplaints();
     }
@@ -68,7 +69,7 @@ const AgentHome = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('user');
-    window.location.href = '/Login';
+    navigate('/login', { replace: true });
   };
 
   return (
